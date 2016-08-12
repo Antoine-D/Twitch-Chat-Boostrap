@@ -39,7 +39,7 @@ $('#show-timestamp-checkbox').on( 'change', function() {
     }
 });
 
-var socket = io.connect('http://104.131.219.239:3000', {reconnect: true});
+var socket = io.connect('<node_server_ip>:<port>', {reconnect: true});
 
 var sendChatMessage = function() {
     if($('#chat-textbox').val().trim().length > 0) {
